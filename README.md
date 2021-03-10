@@ -1,1 +1,3 @@
-# CtCI_self
+# CtCI
+## Cracking the Coding Interview
+### My Java solution

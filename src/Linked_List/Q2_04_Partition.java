@@ -13,20 +13,18 @@ Does that help you come up with more solutions?
  */
 public class Q2_04_Partition {
     public static LinkedListNode partition(LinkedListNode node, int x) {
-        if (node == null) {
-            return null;
-        }
         LinkedListNode head = node;
         LinkedListNode tail = node;
 
+        /* Partition list */
         while (node != null) {
             LinkedListNode next = node.next;
             if (node.data < x) {
-                // insert node at head
+                /* Insert node at head. */
                 node.next = head;
                 head = node;
             } else {
-                // insert at tail
+                /* Insert node at tail. */
                 tail.next = node;
                 tail = node;
             }
